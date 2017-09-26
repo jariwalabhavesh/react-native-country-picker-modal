@@ -334,13 +334,14 @@ export default class CountryPicker extends Component {
             <KeyboardAvoidingView behavior="padding">
               <View style={styles.contentContainer}>
                 <ListView
-                  keyboardShouldPersistTaps="always"
+                  keyboardShouldPersistTaps={true}
                   enableEmptySections
                   ref={listView => this._listView = listView}
                   dataSource={this.state.dataSource}
                   renderRow={country => this.renderCountry(country)}
-                  initialListSize={30}
-                  pageSize={15}
+                  initialListSize={15}
+                  pageSize={300}
+                  style={styles.countryList}
                   onLayout={
                     (
                       { nativeEvent: { layout: { y: offset } } }
@@ -349,7 +350,7 @@ export default class CountryPicker extends Component {
                 />
                 <ScrollView
                   contentContainerStyle={styles.letters}
-                  keyboardShouldPersistTaps="always"
+                  keyboardShouldPersistTaps={true}
                 >
                   {
                     this.state.filter === '' &&
