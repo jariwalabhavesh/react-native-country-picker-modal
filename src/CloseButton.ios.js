@@ -18,8 +18,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   closeButtonImage: {
-    height: 35,
-    width: 35,
+    height: 22,
+    width: 22,
     resizeMode: 'contain',
   },
 });
