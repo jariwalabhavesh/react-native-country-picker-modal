@@ -325,6 +325,7 @@ export default class CountryPicker extends Component {
                     autoFocus={this.props.autoFocusFilter}
                     autoCorrect={false}
                     placeholder={this.props.filterPlaceholder}
+                    placeholderTextColor='#FFF'
                     style={[styles.input, !this.props.closeable && styles.inputOnly]}
                     onChangeText={this.handleFilterChange}
                     value={this.state.filter}
