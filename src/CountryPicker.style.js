@@ -88,4 +88,7 @@ export default StyleSheet.create({
     textAlign: 'center',
     fontSize: getHeightPercent(2.2),
   },
+  countryList:{
+    width:getWidthPercent(96)
+  }
 });
